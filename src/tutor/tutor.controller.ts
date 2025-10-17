@@ -5,8 +5,7 @@ import { Tutor } from './entity/tutor.entity';
 
 @Controller('tutor')
 export class TutorController {
-   tutorService: any;
-   constructor(private readonly usuarioService: TutorService){}
+   constructor(private readonly tutorService: TutorService){}
 
    @Post()
    create(@Body() tutorData: TutorDto){

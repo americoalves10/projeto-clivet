@@ -20,10 +20,8 @@ export class Tutor{
    })
    endereco: string;
 
-   @Column({
-       length:20
-   })
-   data_nasc: string;
+   @Column('date')
+   data_nasc: Date;
 
    @Column({
        length:15
